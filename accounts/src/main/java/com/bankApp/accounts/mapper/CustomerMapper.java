@@ -5,18 +5,18 @@ import com.bankApp.accounts.entity.Customer;
 
 public class CustomerMapper {
 
-    public static CustomerDto mapToCustomerDto(Customer entity, CustomerDto dto){
-        dto.setName(entity.getName());
-        dto.setEmail(entity.getEmail());
-        dto.setMobileNumber(entity.getMobileNumber());
-        return dto;
+    public static CustomerDto mapToCustomerDto(Customer customer, CustomerDto customerDto){
+        customerDto.setName(customer.getName());
+        customerDto.setEmail(customer.getEmail());
+        customerDto.setMobileNumber(customer.getMobileNumber());
+        return customerDto;
     }
 
-    public static Customer mapToCustomer(CustomerDto dto, Customer entity){
-        entity.setName(dto.getName());
-        entity.setEmail(dto.getEmail());
-        entity.setMobileNumber(dto.getMobileNumber());
-        return entity;
+    public static Customer mapToCustomer(CustomerDto customerDto, Customer customer){
+        customer.setName(customerDto.getName());
+        customer.setEmail(customerDto.getEmail());
+        customer.setMobileNumber(customerDto.getMobileNumber());
+        return customer;
     }
 
 }

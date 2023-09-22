@@ -5,18 +5,18 @@ import com.bankApp.accounts.entity.Accounts;
 
 public class AccountsMapper {
 
-    public static AccountsDto mapToAccountsDto(Accounts entity, AccountsDto dto){
-        dto.setAccountNumber(entity.getAccountNumber());
-        dto.setAccountType(entity.getAccountType());
-        dto.setBranchAddress(entity.getBranchAddress());
-        return dto;
+    public static AccountsDto mapToAccountsDto(Accounts accounts, AccountsDto accountsDto){
+        accountsDto.setAccountNumber(accounts.getAccountNumber());
+        accountsDto.setAccountType(accounts.getAccountType());
+        accountsDto.setBranchAddress(accounts.getBranchAddress());
+        return accountsDto;
     }
 
-    public static Accounts mapToAccounts(AccountsDto dto, Accounts entity){
-        entity.setAccountNumber(dto.getAccountNumber());
-        entity.setAccountType(dto.getAccountType());
-        entity.setBranchAddress(dto.getBranchAddress());
-        return entity;
+    public static Accounts mapToAccounts(AccountsDto accountsDto, Accounts accounts){
+        accounts.setAccountNumber(accountsDto.getAccountNumber());
+        accounts.setAccountType(accountsDto.getAccountType());
+        accounts.setBranchAddress(accountsDto.getBranchAddress());
+        return accounts;
     }
 
 }
