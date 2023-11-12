@@ -14,3 +14,14 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+build:
+  version: "3.0"
+
+loans:
+  message: "Welcome to the loans API"
+  contactDetails:
+    name: "Liliherax - Product Owner"
+    email: "__"
+  onCallSupport:
+    - (011)-GOOD-PLEASE-HELP-RUNNING-THIS

@@ -14,3 +14,18 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  config:
+    import:
+      - "application_qa.yml"
+      - "application_prod.yml"
+
+build:
+  version: "3.0"
+
+cards:
+  message: "Welcome to the cards API"
+  contactDetails:
+    name: "Liliherax - Product Owner"
+    email: "__"
+  onCallSupport:
+    - (011)-GOOD-PLEASE-HELP-RUNNING-THIS

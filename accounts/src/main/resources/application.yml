@@ -17,3 +17,17 @@ spring:
         show-sql: true
         hibernate:
             ddl-auto: update
+    config:
+        import:
+            - "application_qa.yml"
+            - "application_prod.yml"
+build:
+    version: "3.0"
+
+accounts:
+    message: "Welcome to the accounts API"
+    contactDetails:
+        name: "Liliherax"
+        email: "__"
+    onCallSupport:
+        - (011)-GOOD-PLEASE-HELP
